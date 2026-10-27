@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Opt into OS-level dynamic type and accessibility text scaling -->
+  <meta name="text-scale" content="scale">
+  <!-- Declare support for both light and dark themes to prevent FOUC -->
+  <meta name="color-scheme" content="light dark">
+  <title>Miami Street Medicine Training Track | University of Miami, Jackson Health System &amp; DCSR</title>
+  <meta name="description" content="The HRSA-funded Miami Street Medicine Training Initiative (MSMTI, HRSA-25-078 / 1 T35HP55565-01-00) prepares Internal Medicine and Med-Peds residents at the University of Miami Miller School of Medicine and Jackson Memorial Hospital to care for persons experiencing unsheltered homelessness.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- Skip Link for Keyboard Navigation -->
+  <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+
+  <!-- Top Institutional Ribbon -->
+  <div class="institutional-Ribbon">
+    <div class="ribbon-inner">
+      <div class="ribbon-Affiliations">
+        <span>University of Miami Miller School of Medicine</span>
+        <span class="ribbon-divider" aria-hidden="true">•</span>
+        <span>Jackson Health System / Jackson Memorial Hospital</span>
+        <span class="ribbon-divider" aria-hidden="true">•</span>
+        <span>Dade County Street Response &amp; Miami Street Medicine</span>
+      </div>
+      <div class="ribbon-actions">
+        <span class="grant-badge-top">HRSA-25-078 • Award 1 T35HP55565-01-00</span>
+        <button type="button" id="theme-toggle-btn" class="theme-toggle-btn">
+          <span id="theme-toggle-label">Theme: System</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header & Yale-Modeled Featured Launch News Banner -->
+  <header class="site-header">
+    <div class="header-container">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="https://med.miami.edu/" target="_blank" rel="noopener">Miller School of Medicine</a></li>
+          <li><a href="https://jacksonhealth.org/graduate-medical-education/" target="_blank" rel="noopener">Graduate Medical Education</a></li>
+          <li><a href="#overview">Internal Medicine &amp; Med-Peds Residency Education</a></li>
+          <li aria-current="page">Miami Street Medicine Training Track (MSMTI)</li>
+        </ol>
+      </nav>
+
+      <div class="header-brand-row">
+        <div class="header-title-group">
+          <p class="department-kicker">Departments of Medicine &amp; Pediatrics • Division of Internal Medicine-Pediatrics &amp; Hospital Medicine</p>
+          <h1>Miami Street Medicine Training Track</h1>
+          <p class="header-subtitle">
+            A longitudinal residency training track and community-partnered clinical immersion preparing primary care physicians to deliver trauma-informed, street-based care to persons experiencing unsheltered homelessness across Miami-Dade County.
+          </p>
+        </div>
+        <div class="header-logos">
+          <img
+            src="assets/MSM-Fitted.png"
+            alt="Miami Street Medicine official logo"
+            class="brand-logo-img"
+            width="160"
+            height="52"
+            fetchpriority="high"
+          >
+          <img
+            src="assets/DCSR%20logo.png"
+            alt="Dade County Street Response official logo"
+            class="brand-logo-img"
+            width="130"
+            height="52"
+            fetchpriority="high"
+          >
+        </div>
+      </div>
+
+      <!-- Featured News Callout (Modeled on Yale's Launch News Article Card) -->
+      <aside class="featured-news-banner" aria-label="Featured Program Launch Announcement">
+        <div class="news-meta-row">
+          <span class="news-tag">Featured Announcement</span>
+          <time datetime="2025-10-01">October 2025 • InauguralHRSA Cohort Launch: July 1, 2026</time>
+        </div>
+        <div>
+          <button type="button" class="news-headline-btn" data-open-news-dialog>
+            University of Miami, Jackson Health System, and Miami Street Medicine Launch HRSA-Funded Street Medicine Residency Training Initiative
+          </button>
+        </div>
+        <p class="news-excerpt">
+          Building on more than five years of street-based clinical care, mobile crisis outreach, and harm reduction across Miami-Dade County, a $2.5 million five-year Health Resources and Services Administration (HRSA) grant will expand Internal Medicine and Med-Peds resident education in caring for people experiencing unsheltered homelessness—bridging hospital bedside consults directly to encampments, syringe services, and medical respite...
+        </p>
+        <div class="news-actions-row">
+          <button type="button" class="read-more-trigger" data-open-news-dialog>
+            Read more: Full Launch Announcement
+          </button>
+          <a href="https://www.hrsa.gov/grants/find-funding/HRSA-25-078" target="_blank" rel="noopener">
+            View HRSA-25-078 Federal Program Notice
+          </a>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <!-- Main Two-Column Page Shell -->
+  <div class="page-shell">
+    <!-- Sticky "On this page" Navigation Sidebar -->
+    <aside class="on-this-page-aside" aria-label="Table of contents">
+      <h2 class="aside-heading">On this page</h2>
+      <nav aria-label="On this page sections">
+        <ul class="toc-list">
+          <li><a href="#overview" class="toc-link" aria-current="true">Overview</a></li>
+          <li><a href="#curriculum" class="toc-link">Curriculum</a></li>
+          <li><a href="#learning-objectives" class="toc-link">Learning Objectives</a></li>
+          <li><a href="#research-and-conferences" class="toc-link">Research and Conferences</a></li>
+          <li><a href="#people" class="toc-link">People</a></li>
+          <li><a href="#how-to-apply" class="toc-link">How to Apply</a></li>
+        </ul>
+      </nav>
+
+      <div class="aside-quick-facts">
+        <h3 class="aside-heading">Track Quick Facts</h3>
+        <dl>
+          <div>
+            <dt>Federal Sponsor</dt>
+            <dd>HRSA PCTE-RTSM (HRSA-25-078)</dd>
+          </div>
+          <div>
+            <dt>Award Number</dt>
+            <dd>1 T35HP55565-01-00 ($2.5M / 5 Yrs)</dd>
+          </div>
+          <div>
+            <dt>Sponsoring Institution</dt>
+            <dd>Jackson Memorial Hospital / Jackson Health System (Code 110314)</dd>
+          </div>
+          <div>
+            <dt>Participating Residencies</dt>
+            <dd>Internal Medicine (Urban Health Track) &amp; Combined Med-Peds</dd>
+          </div>
+          <div>
+            <dt>Primary Community Partner</dt>
+            <dd>Dade County Street Response (DCSR) / Miami Street Medicine</dd>
+          </div>
+          <div>
+            <dt>Didactic Architecture</dt>
+            <dd>Street Classroom (7 Trunk Modules, 16 Branches, 51 Cases)</dd>
+          </div>
+        </dl>
+      </div>
+    </aside>
+
+    <!-- Main Document Flow -->
+    <main id="main-content" class="main-article" tabindex="-1">
+
+      <!-- ================================================================
+           SECTION 1: OVERVIEW
+           ================================================================ -->
+      <section id="overview" class="track-section">
+        <div class="section-header">
+          <h2>Overview</h2>
+          <span class="section-tag">HRSA-25-078 • Award 1 T35HP55565-01-00</span>
+        </div>
+
+        <div class="prose-measure">
+          <p>
+            People experiencing homelessness face a dramatically reduced life expectancy—often by two to three decades compared with housed peers—with mortality rates up to nine times higher among young adults and 3.5 times higher across all age groups. The causes are multifactorial and rooted in structural inequities: unstable and extreme environmental living conditions, fragmented healthcare access, co-occurring serious mental illness and substance use disorders, criminalization and incarceration, linguistic barriers, and pervasive institutional mistrust.
+          </p>
+          <p>
+            Those without stable housing experience disproportionately high burdens of uncontrolled cardiovascular and metabolic disease, severe skin and soft-tissue infections, communicable diseases (HIV, hepatitis C, tuberculosis), heat-related illness, and traumatic injury—frequently compounded by <strong>tri-morbidity</strong> (the simultaneous intersection of chronic physical illness, severe mental illness, and substance use disorder).
+          </p>
+          <p>
+            In Miami-Dade County—a diverse metropolitan region of 2.7 million residents (69.1% Hispanic/Latino and 16.9% Black/African American, with a substantial Haitian Creole-speaking community)—nearly <strong>30% of households experience severe housing instability</strong> (compared with 19% across Florida and 18% nationally), 13.4% of residents under age 65 lack health insurance, and 66 of Florida's 67 counties are federally designated Primary Care Health Professional Shortage Areas (HPSAs). Among people experiencing homelessness in Miami-Dade, <strong>67% report current and 86% report lifetime mental health or substance use disorders</strong>, yet traditional clinic walls remain inaccessible due to transportation barriers, rigid appointment systems, lack of government identification, and prior stigmatizing healthcare encounters.
+          </p>
+          <p>
+            For these reasons, the <a href="https://med.miami.edu/" target="_blank" rel="noopener">University of Miami Miller School of Medicine</a> and <a href="https://jacksonhealth.org/graduate-medical-education/" target="_blank" rel="noopener">Jackson Health System / Jackson Memorial Hospital</a>—across both the <strong>Internal Medicine Residency Program (Urban Health Track)</strong> and the <strong>Combined Internal Medicine-Pediatrics (Med-Peds) Residency Program</strong>—in partnership with <a href="https://www.miamistreetmedicine.org/" target="_blank" rel="noopener">Miami Street Medicine (MSM)</a> and <a href="https://www.dadecountystreetresponse.org/" target="_blank" rel="noopener">Dade County Street Response (DCSR)</a>, created the <strong>Miami Street Medicine Training Initiative (MSMTI)</strong>, supported by a five-year, $2.5 million <a href="https://www.hrsa.gov/grants/find-funding/HRSA-25-078" target="_blank" rel="noopener">Health Resources and Services Administration (HRSA) Primary Care Training and Enhancement: Residency Training in Street Medicine (PCTE-RTSM) grant (HRSA-25-078, Award 1 T35HP55565-01-00)</a>.
+          </p>
+          <p>
+            The MSMTI features a longitudinal multi-year street medicine training track (3 years for Categorical Internal Medicine Urban Health Track residents; 4 years for Categorical Med-Peds residents) alongside structured 2- to 4-week elective blocks for broader Internal Medicine and Emergency Medicine residents. Trainees gain vital clinical, procedural, behavioral, and structural advocacy skills in the direct care of persons experiencing homelessness (PEH) and, specifically, <strong>persons experiencing unsheltered homelessness (PEUH)</strong> directly where they live—under highway overpasses, in outdoor encampments, at drop-in syringe services, and in mobile urgent care units.
+          </p>
+        </div>
+
+        <!-- Empirical Impact & Need KPI Cards -->
+        <ul class="stats-grid" role="list" aria-label="Miami-Dade Street Medicine Epidemiological and Clinical Metrics">
+          <li class="stat-card">
+            <div>
+              <div class="stat-value">1,300+</div>
+              <div class="stat-label">Unsheltered Patients Served</div>
+            </div>
+            <p class="stat-context">4,000+ longitudinal street &amp; mobile clinical encounters documented in the MSM REDCap Registry.</p>
+          </li>
+          <li class="stat-card">
+            <div>
+              <div class="stat-value">-9.25 mmHg</div>
+              <div class="stat-label">Systolic BP Reduction (p &lt; 0.01)</div>
+            </div>
+            <p class="stat-context">72% baseline hypertension prevalence on the street, with 45.3% achieving full BP control via street follow-up.</p>
+          </li>
+          <li class="stat-card">
+            <div>
+              <div class="stat-value">67% / 86%</div>
+              <div class="stat-label">Current / Lifetime Behavioral Need</div>
+            </div>
+            <p class="stat-context">Prevalence of mental health &amp; substance use conditions among unhoused adults in Miami-Dade County.</p>
+          </li>
+          <li class="stat-card">
+            <div>
+              <div class="stat-value">32–33</div>
+              <div class="stat-label">Track Residents Trained Per Year</div>
+            </div>
+            <p class="stat-context">12 Urban Health Track IM residents (PGY 1–3) + 20–21 Med-Peds residents (PGY 1–4) + elective rotators.</p>
+          </li>
+        </ul>
+
+        <div class="callout-box prose-measure">
+          <h3>Foundational Ethos: Radical Hospitality, Reality-Based Medicine &amp; The Anti-Exploitation Doctrine</h3>
+          <p>
+            Guided by the <a href="https://www.streetmedicine.org/" target="_blank" rel="noopener">Street Medicine Institute's</a> philosophy to <em>"Go to the People"</em>, MSMTI trains residents in <strong>Radical Hospitality</strong>, <strong>Housing First</strong>, <strong>Harm Reduction</strong>, and <strong>Reality-Based Clinical Decision-Making</strong> (adapting diagnostic and therapeutic plans to each patient's actual street ecology, heat exposure, and storage constraints). Every field encounter is governed by Miami Street Medicine's <strong>Anti-Exploitation Doctrine</strong>: unsheltered patients are our neighbors, not clinical teaching material. Patient dignity, privacy, and voluntary consent unconditionally supersede educational objectives.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SECTION 2: CURRICULUM
+           ================================================================ -->
+      <section id="curriculum" class="track-section">
+        <div class="section-header">
+          <h2>Curriculum</h2>
+          <span class="section-tag">Community-Partnered Care &amp; Street Classroom</span>
+        </div>
+
+        <div class="prose-measure">
+          <p>
+            The Miami Street Medicine Training Track places community-partnered, interprofessional care at the core of residency education. Rather than treating street medicine as a purely observational experience, the curriculum scaffolds trainees from foundational safety, de-escalation, and simulation bootcamps in PGY-1 to intensive 4-week community-based clinical immersions in PGY-2, PGY-3, and PGY-4, supported throughout residency by the <strong>"Street Classroom"</strong> didactic trunk and hospital-to-street longitudinal continuity panels.
+          </p>
+        </div>
+
+        <div class="curriculum-pillar-stack">
+
+          <!-- Pillar 1: 4-Week Clinical Immersion (parallels Yale's 2 Week Clinical Immersion) -->
+          <article class="curriculum-pillar">
+            <div class="pillar-header">
+              <h3>4-Week Clinical Immersion &amp; Staggered Field Outreach (Rotation 1: Care for the Unsheltered Unhoused)</h3>
+              <span class="pillar-badge">IM UHT PGY-2 • Med-Peds PGY-3 • Elective Rotators</span>
+            </div>
+            <div class="prose-measure">
+              <p>
+                The foundational field experience is a dedicated <strong>4-week clinical immersion</strong> focused on <em>Care for the Unsheltered Unhoused</em> (completed in PGY-2 for Urban Health Track Internal Medicine residents, PGY-3 for Combined Med-Peds residents, and as a 2- to 4-week block for elective rotators). Residents embed directly with the <a href="https://www.dadecountystreetresponse.org/" target="_blank" rel="noopener">Dade County Street Response (DCSR)</a> and <a href="https://www.miamistreetmedicine.org/" target="_blank" rel="noopener">Miami Street Medicine (MSM)</a> clinical outreach teams headquartered in Liberty City/Allapattah (4300 NW 12th Ave, Miami, FL).
+              </p>
+              <p>
+                To prevent encampment overcrowding and protect psychological safety on the street, resident field deployment is governed by a strict <strong>3-Resident Staggered Field Schedule</strong> embedded within a tight <strong>4-Person Interprofessional Street Team</strong> (1 Attending Physician, 1 Resident Physician in a Clinical Support Role, 1 Professional Case Manager, and 1 salaried Lived-Experience Peer Navigator, accompanied by Spanish and Haitian Creole Language Observers).
+              </p>
+              <ul class="pillar-highlights">
+                <li>
+                  <strong>Weekly Street Rounds (Overtown, Downtown Miami, Lummus Park &amp; Camillus Perimeters):</strong> Residents deliver direct curbside primary care, hypertension and diabetes stabilization (avoiding hypoglycemia/lactic acidosis pitfalls in food-insecure patients), field wound care and sharp debridement, heat illness triage, and point-of-care diagnostics using handheld <strong>Butterfly iQ+ ultrasound (POCUS)</strong> and <strong>Abbott i-STAT</strong> blood analyzers out of modular medical backpacks.
+                </li>
+                <li>
+                  <strong>Doctors Within Borders (DWB) Free Urgent Care Clinic (Liberty City):</strong> Bi-weekly walk-in curbside urgent care clinic operating in an underserved Black and Afro-Caribbean neighborhood, providing acute infection management, point-of-care testing, medication dispensing under Florida's sovereign immunity Volunteer Health Care Provider Program (VHCPP, F.S. § 766.1115), and warm handoffs to safety-net primary care.
+                </li>
+                <li>
+                  <strong>Freedom House Mobile Crisis Team (24/7 Unarmed Crisis Response):</strong> Residents rotate alongside DCSR's unarmed community crisis responders answering mental health, substance use, and extreme social vulnerability calls across Miami-Dade County as a compassionate alternative to law enforcement response.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Pillar 2: Longitudinal Continuity & Inpatient Consults (parallels Yale's Longitudinal Clinic / Transitions) -->
+          <article class="curriculum-pillar">
+            <div class="pillar-header">
+              <h3>Longitudinal Hospital-to-Street Continuity Clinic &amp; Inpatient Consult Service</h3>
+              <span class="pillar-badge">Jackson Memorial Hospital • Camillus Health Concern (FQHC)</span>
+            </div>
+            <div class="prose-measure">
+              <p>
+                Unsheltered patients experience high rates of emergency department recidivism, premature "against medical advice" (AMA) discharges, and post-hospitalization mortality when discharged back to the pavement with prescriptions they cannot fill or wound care instructions requiring running water. MSMTI trains residents to close this gap through a bidirectional <strong>"Street Medicine on the Floors"</strong> continuity model:
+              </p>
+              <ul class="pillar-highlights">
+                <li>
+                  <strong>Jackson Memorial Hospital (JMH) Inpatient Street Medicine Consult Service:</strong> Led by hospitalist faculty Dr. Armen Henderson and Dr. Joshua Laban, residents evaluate hospitalized unsheltered patients at the bedside, address untreated withdrawal or behavioral distress driving premature discharges, simplify discharge regimens to once-daily heat-stable formulations, and schedule concrete post-discharge street follow-up coordinates.
+                </li>
+                <li>
+                  <strong>Camillus Health Concern (FQHC) &amp; Camillus House Medical Respite:</strong> Residents rotate at <a href="https://www.camillushealth.org/" target="_blank" rel="noopener">Camillus Health Concern</a> (336 NW 5th Street, Miami, FL), a federally qualified Health Care for the Homeless clinic and Lazarus Project behavioral health partner, coordinating post-hospitalization medical respite beds, emergency shelter intake, and transitional housing transitions.
+                </li>
+                <li>
+                  <strong>"J-11 Jackson Card" Charity Care &amp; REDCap Longitudinal Panel Tracking:</strong> Working alongside DCSR Case Management Lead Fallon L. Green and Clinic Manager Hana Abdulla, MSW, residents navigate the Jackson Health System financial assistance pathway ("J-11 Jackson Card") to unlock outpatient specialty clinics, imaging, and pharmacy access, while tracking their assigned longitudinal patient panel in the <strong>MSM REDCap Clinical Registry</strong> and <strong>New Innovations</strong>.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Pillar 3: Street Psychiatry & Harm Reduction (parallels Yale's Street Psychiatry) -->
+          <article class="curriculum-pillar">
+            <div class="pillar-header">
+              <h3>Street Psychiatry, Harm Reduction &amp; Addiction Medicine (Rotation 2)</h3>
+              <span class="pillar-badge">IM UHT PGY-3 • Med-Peds PGY-4 • IDEA Exchange SSP</span>
+            </div>
+            <div class="prose-measure">
+              <p>
+                In their senior immersion block (PGY-3 for Urban Health Track IM residents; PGY-4 for Med-Peds residents), trainees complete a dedicated 4-week rotation focused on <em>Street Psychiatry, Harm Reduction, and Addressing Social &amp; Legal Needs</em>, integrating field behavioral health with evidence-based addiction medicine.
+              </p>
+              <ul class="pillar-highlights">
+                <li>
+                  <strong>Community Psychiatry Rounds &amp; Curbside Telepsychiatry:</strong> Co-led twice weekly by <strong>Dr. Edward Suarez Jr., PsyD, LMHC, MBA</strong> (UM Department of Psychiatry) and <strong>Dr. Stephen McLeod-Bryant, MD</strong> (DCSR Director of Mental Health Services), residents conduct field psychiatric evaluations at street encampments, Camillus House, and the IDEA Clinic. Trainees master trauma-informed verbal de-escalation, street decisional capacity assessments, long-acting injectable (LAI) antipsychotic maintenance, and real-time curbside telepsychiatry consultations during Saturday street runs.
+                </li>
+                <li>
+                  <strong>IDEA Syringe Services Program (IDEA Exchange) &amp; Mobile Harm Reduction:</strong> Founded by <strong>Dr. Hansel Tookes, MD, MPH</strong> as Florida's first legal syringe exchange (1668 NW 7th Ave, Miami, FL) and precepted by Dr. Tookes, <strong>Dr. Teresa Chueng, MD, MPH</strong>, and <strong>Dr. Katrina Ciraldo, MD</strong>, residents rotate on the IDEA fixed clinic, mobile syringe exchange unit, and wound care clinic. Trainees initiate low-barrier sublingual (8–16 mg) and long-acting injectable (Sublocade) buprenorphine, distribute intranasal naloxone and fentanyl/xylazine test strips, manage xylazine-associated necrotizing skin and soft-tissue infections, and deliver Tele-Harm Reduction HIV/HCV treatment and PrEP.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Pillar 4: Street Classroom Didactic Trunk & Simulation -->
+          <article class="curriculum-pillar">
+            <div class="pillar-header">
+              <h3>The "Street Classroom" Didactic Trunk, Simulation &amp; Linguistic Concordance</h3>
+              <span class="pillar-badge">7 Trunk Modules • 16 Branches • 51 Vignettes • POCUS Lab</span>
+            </div>
+            <div class="prose-measure">
+              <p>
+                All track residents and elective rotators complete the <strong>Street Classroom</strong> curriculum, co-developed by DCSR Clinical Educator <strong>Dr. Dan Bergholz</strong> in collaboration with <strong>Dr. Armen Henderson</strong>, <strong>Dr. Stefanie Brown</strong>, <strong>Dr. Jonathan Tolentino</strong>, <strong>Dr. Kendra Van Kirk</strong>, and the UM/JMH specialty faculty. Synchronous didactic and case-based sessions convene on <strong>Wednesday evenings at 5:30 PM EST</strong> (engineered with a 30-minute QGenda travel buffer following 5:00 PM inpatient sign-out at Jackson Memorial Hospital and the Miami VA), complemented by asynchronous Canvas/Blackboard LMS self-study modules and hands-on workshops:
+              </p>
+              <ul class="pillar-highlights">
+                <li>
+                  <strong>7-Session Core Didactic Trunk (<code>T1–T7</code>):</strong> Covers (1) Orientation, Tri-Morbidity &amp; Street Medicine Ethos; (2) Assertive Engagement &amp; Trauma-Informed Verbal De-Escalation; (3) Field Safety &amp; the 6-Level REDCap Flagging System; (4) The <code>HOUSED BEDS</code> Street History Mnemonic &amp; Adapted Street Physical Exam; (5) Can't-Miss Street Conditions (Wound Care, SSTI, DVT, Extreme Heat); (6) Addiction Essentials &amp; Rapid Buprenorphine Induction; and (7) Clinical 2-Station OSCE Checkout &amp; Resident Burnout Prevention.
+                </li>
+                <li>
+                  <strong>16 Specialty Branch Modules (<code>B01–B16</code>) &amp; 51-Case Clinical Vignette Bank:</strong> Deep-dive modules spanning Handheld POCUS Lab (Abscess vs. Phlegmon &amp; 2-Point DVT Compression), Advanced Care Coordination, Street Psychiatry &amp; SMI Triage, Harm Reduction &amp; LAI Buprenorphine, Intimate Partner Violence (IPV) &amp; Human Trafficking Field Screening, Inpatient-to-Street Transitions, Heat Emergencies &amp; Provider Needle-Stick Safety, and Foot Care / Environmental Exposure.
+                </li>
+                <li>
+                  <strong>Experiential Poverty Simulation &amp; Linguistic Concordance:</strong> In PGY-1, residents participate in the <strong>Miami Coalition for the Homeless Community Action Poverty Simulation (CAPS)</strong> and interactive workshops led by <strong>Dr. Victor Cueto, MD, MS, MPH</strong> on cultural humility and medical Spanish and Haitian Creole communication, paired with longitudinal field feedback from community language observers.
+                </li>
+              </ul>
+
+              <details class="curriculum-details">
+                <summary>Explore the HOUSED BEDS Mnemonic &amp; 6-Level Street Triage / REDCap Flagging System</summary>
+                <div class="details-body">
+                  <p>
+                    Every trainee carries <strong>7 Waterproof Field Pocket Cards</strong> standardizing clinical assessment and team safety across all outreach sites:
+                  </p>
+                  <ul>
+                    <li>
+                      <strong><code>HOUSED BEDS</code> Street History Framework:</strong> <strong>H</strong>ousing &amp; exact sleep location/coordinates; <strong>O</strong>utreach &amp; case management connections; <strong>U</strong>nsheltered environmental exposures (extreme heat, rain, vector exposure, shoes/socks); <strong>S</strong>ubstance use, route, withdrawal risk &amp; harm reduction supplies; <strong>E</strong>conomics, income &amp; benefits (SNAP, SSI/SSDI, J-11 card); <strong>D</strong>ocuments &amp; government ID status (FL DMV FLOW eligibility); <strong>B</strong>ehavioral health, trauma &amp; psychiatric history; <strong>E</strong>ating, food/water security &amp; medication storage reality; <strong>D</strong>isability, mobility, vision/hearing &amp; Traumatic Brain Injury (TBI) screen; <strong>S</strong>afety, violence, intimate partner violence (IPV) &amp; legal barriers.
+                    </li>
+                    <li>
+                      <strong>6-Level Street Clinical Triage &amp; REDCap Behavioral Flagging System:</strong> Standardizes medical acuity from <strong>Level 1 (Immediate 911 / Life-Threatening Emergency)</strong> and <strong>Level 2 (Urgent Mobile Crisis / Same-Day ED Transfer)</strong> through <strong>Levels 3–6 (Subacute Curbside Stabilization, Routine Street Primary Care, Case Management Priority, and Peer Check-In)</strong>, paired with a dynamic 6-tier behavioral safety flag in REDCap that protects outreach teams while explicitly preventing permanent punitive patient discharges.
+                    </li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Pillar 5: Medical-Legal Partnership (parallels Yale's Medical Legal Partnership) -->
+          <article class="curriculum-pillar">
+            <div class="pillar-header">
+              <h3>Medical-Legal Partnership (MLP) &amp; Structural Advocacy</h3>
+              <span class="pillar-badge">LSGMI • UM Law Health Rights Clinic • Human Rights Clinic</span>
+            </div>
+            <div class="prose-measure">
+              <p>
+                Unresolved civil and administrative legal needs—such as wrongful benefit terminations, lack of vital identification documents, unlawful evictions, municipal "camping ban" citations, and immigration barriers—directly undermine medical stabilization. Track residents receive formal didactic and experiential training in <strong>Medical-Legal Partnership (MLP)</strong> collaboration alongside public interest attorneys, law students, and DCSR case managers:
+              </p>
+              <ul class="pillar-highlights">
+                <li>
+                  <strong>Legal Services of Greater Miami, Inc. (LSGMI) &amp; UM School of Law Health Rights Clinic:</strong> Residents learn to screen for health-harming legal needs on the street and draft rigorous medical-legal supporting documentation for <strong>SSI/SSDI disability applications and appeals</strong>, Medicaid/Medicare coverage disputes, unlawful eviction defense, and reasonable housing accommodations under the Fair Housing Act.
+                </li>
+                <li>
+                  <strong>Vital Document Recovery &amp; FL DMV FLOW Mobile Units:</strong> Trainees work with DCSR case managers to help unsheltered patients replace lost birth certificates and obtain official Florida state identification cards through the Florida Department of Highway Safety and Motor Vehicles <strong>Florida Licensing on Wheels (FLOW)</strong> mobile unit—a prerequisite for shelter entry, J-11 Jackson Card enrollment, and permanent supportive housing.
+                </li>
+                <li>
+                  <strong>UM Miller School of Medicine Human Rights Clinic &amp; Policy Advocacy:</strong> Residents have opportunities to train in forensic medical and psychological evaluations for asylum seekers and survivors of trafficking, and to participate in municipal and state health policy advocacy addressing extreme heat protections, decriminalization of homelessness, and harm reduction access.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Verified Clinical Community-Based Rotations Table (HRSA Attachment 4) -->
+        <div class="table-scroll-wrapper">
+          <table class="data-table">
+            <caption>Verified Community-Based Clinical Rotation Sites (HRSA-25-078 Attachment 4 &amp; Public Health Trust Affiliation Agreements)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Clinical Site Name &amp; Setting</th>
+                <th scope="col">Physical Location (Miami, FL)</th>
+                <th scope="col">Clinical Services &amp; Educational Focus</th>
+                <th scope="col">Rotation Length &amp; Annual Resident Volume</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Dade County Street Response (DCSR) / Miami Street Medicine</strong><br>
+                  <span>501(c)(3) Community Street Medicine HQ, Mobile Units &amp; Street Encampments</span>
+                </td>
+                <td>4300 NW 12th Ave, Miami, FL 33127 (plus Overtown, Downtown, Liberty City &amp; Countywide Encampments)</td>
+                <td>Weekly Street Rounds, Doctors Within Borders (DWB) Free Urgent Care Clinic, Freedom House 24/7 Mobile Crisis Team, POCUS/i-STAT field diagnostics, and J-11/FLOW case management.</td>
+                <td>4-Week Immersion Blocks<br><strong>19 Residents / Year</strong> (Plus longitudinal continuity sessions)</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Camillus Health Concern (FQHC) &amp; Camillus House</strong><br>
+                  <span>Federally Qualified Health Care for the Homeless Center &amp; Respite Campus</span>
+                </td>
+                <td>336 NW 5th Street, Miami, FL 33128</td>
+                <td>Comprehensive HCH primary care, post-hospitalization medical respite beds, Lazarus Project behavioral health outreach, emergency shelter &amp; permanent supportive housing linkage.</td>
+                <td>4-Week Immersion Blocks<br><strong>9 Residents / Year</strong> (Integrated with Rotation 1 &amp; transitions of care)</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>IDEA Syringe Services Program (IDEA Exchange)</strong><br>
+                  <span>Fixed Harm Reduction Clinic, Wound Care Clinic &amp; Mobile Exchange Unit</span>
+                </td>
+                <td>1668 NW 7th Ave, Miami, FL 33136</td>
+                <td>Florida's first legal syringe services program: low-barrier SL &amp; LAI buprenorphine (MOUD), xylazine/fentanyl wound care, naloxone distribution, Tele-Harm Reduction HIV/HCV care &amp; PrEP.</td>
+                <td>4-Week Immersion Blocks<br><strong>9 Residents / Year</strong> (Integrated with Rotation 2 &amp; addiction medicine)</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Jackson Memorial Hospital (JMH) Street Medicine Consult Service</strong><br>
+                  <span>Academic Safety-Net Tertiary Teaching Hospital (Sponsoring Institution 110314)</span>
+                </td>
+                <td>1611 NW 12th Ave, Miami, FL 33136</td>
+                <td>"Street Medicine on the Floors" bedside inpatient consults for hospitalized unhoused adults, AMA discharge prevention, J-11 charity card enrollment, and warm handoff to street teams.</td>
+                <td>Longitudinal Inpatient &amp; Consult Integration across PGY-1 to PGY-4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SECTION 3: LEARNING OBJECTIVES
+           ================================================================ -->
+      <section id="learning-objectives" class="track-section">
+        <div class="section-header">
+          <h2>Learning Objectives</h2>
+          <span class="section-tag">ACGME Core Competencies • Constructive Alignment</span>
+        </div>
+
+        <div class="prose-measure">
+          <p>
+            Modeled on ACGME Internal Medicine and Combined Internal Medicine-Pediatrics Milestones and mapped directly to HRSA Notice of Funding Opportunity <code>HRSA-25-078</code> Objectives 1.1 through 3.4, track residents achieve competency across six core domains evaluated via direct bedside observation, New Innovations rotation evaluations, Spanish/Haitian Creole linguistic concordance rubrics, and a capstone 2-station Objective Structured Clinical Examination (OSCE):
+          </p>
+        </div>
+
+        <div class="objectives-grid">
+          <!-- Competency 1 -->
+          <article class="objective-card">
+            <h3>Patient Care in Nontraditional Settings</h3>
+            <ul>
+              <li>Deliver trauma-informed, patient-centered primary and urgent care directly on sidewalks, under highway overpasses, in encampments, and inside mobile medical units.</li>
+              <li>Conduct a focused street history and physical exam using the <code>HOUSED BEDS</code> framework and classify acuity using the 6-Level Street Triage System.</li>
+              <li>Perform bedside handheld Point-of-Care Ultrasound (POCUS) to differentiate soft-tissue abscess from cellulitis/phlegmon and perform 2-point lower-extremity DVT compression.</li>
+              <li>Initiate low-barrier sublingual and long-acting injectable (LAI) buprenorphine and manage severe injection-related and xylazine-associated wounds in field settings.</li>
+              <li>Adapt chronic disease regimens to street realities (e.g., selecting heat-stable, once-daily antihypertensives and avoiding hypoglycemia or dehydration risk in extreme tropical heat).</li>
+            </ul>
+          </article>
+
+          <!-- Competency 2 -->
+          <article class="objective-card">
+            <h3>Medical Knowledge</h3>
+            <ul>
+              <li>Explain the epidemiology, pathophysiology, and mortality drivers of <strong>tri-morbidity</strong> (co-occurring chronic physical illness, serious mental illness, and substance use disorder) among unsheltered populations.</li>
+              <li>Recognize and manage "can't-miss" street emergencies, including exertional and non-exertional heat stroke, necrotizing soft-tissue infections, acute opioid/sedative overdose, alcohol/benzodiazepine withdrawal, and frostbite/immersion foot.</li>
+              <li>Evaluate decisional capacity on the street, distinguishing eccentric survival behaviors from acute life-threatening psychosis or medical delirium.</li>
+              <li>Apply evidence-based infectious disease screening and treatment protocols for HIV, hepatitis B/C, latent and active tuberculosis, syphilis, and ectoparasitic infestations in congregate and unsheltered settings.</li>
+            </ul>
+          </article>
+
+          <!-- Competency 3 -->
+          <article class="objective-card">
+            <h3>Interprofessional and Communication Skills</h3>
+            <ul>
+              <li>Practice effectively within the 4-person interprofessional street team alongside lived-experience Peer Navigators, Case Managers, street psychiatrists, nurses, and medical students.</li>
+              <li>Demonstrate assertive yet non-coercive street engagement, motivational interviewing, and trauma-informed verbal de-escalation during high-stress behavioral encounters.</li>
+              <li>Deliver linguistically and culturally concordant care for Spanish- and Haitian Creole-speaking patients, incorporating structured feedback from community language observers.</li>
+              <li>Execute closed-loop warm handoffs between inpatient hospital teams, emergency departments, medical respite facilities, and street outreach teams.</li>
+            </ul>
+          </article>
+
+          <!-- Competency 4 -->
+          <article class="objective-card">
+            <h3>Professionalism</h3>
+            <ul>
+              <li>Uphold Miami Street Medicine's <strong>Anti-Exploitation Doctrine</strong> and <strong>Radical Hospitality</strong>, honoring each unsheltered person's autonomy, territory, and right to decline care or learner participation without penalty.</li>
+              <li>Recognize and mitigate implicit and explicit bias, diagnostic overshadowing, and stigmatizing language toward individuals who use drugs, live with severe mental illness, or experience criminal-legal involvement.</li>
+              <li>Apply sustainable personal safety practices, dynamic REDCap safety flagging, and structured peer debriefing to prevent moral injury, compassion fatigue, and clinician burnout.</li>
+            </ul>
+          </article>
+
+          <!-- Competency 5 -->
+          <article class="objective-card">
+            <h3>Practice-Based Learning and Improvement</h3>
+            <ul>
+              <li>Utilize the <strong>MSM REDCap Clinical Registry</strong> to track longitudinal patient panels, monitor blood pressure and HbA1c trajectories, and close post-hospitalization follow-up gaps.</li>
+              <li>Design and execute a mentored Quality Improvement (QI) or Community-Based Participatory Research (CBPR) project through the 8-session Resident Scholarly Activity Program (RSAP).</li>
+              <li>Synthesize feedback from multi-source 360-degree evaluations (attending faculty, case managers, peer navigators, and language observers) to refine field practice.</li>
+            </ul>
+          </article>
+
+          <!-- Competency 6 -->
+          <article class="objective-card">
+            <h3>Systems-Based Practice</h3>
+            <ul>
+              <li>Navigate local, state, and federal safety-net systems, including the <strong>J-11 Jackson Card</strong> charity care pathway, Camillus Health Concern (FQHC), Miami-Dade Homeless Trust Continuum of Care, and Medicaid/SSI/SSDI enrollment.</li>
+              <li>Collaborate with Medical-Legal Partnership (MLP) attorneys and the FL DMV FLOW mobile unit to resolve health-harming legal needs and restore government identification documents.</li>
+              <li>Understand the statutory framework of Florida's Volunteer Health Care Provider Program (VHCPP sovereign immunity, F.S. § 766.1115) and the Infectious Disease Elimination Act (IDEA).</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SECTION 4: RESEARCH AND CONFERENCES
+           ================================================================ -->
+      <section id="research-and-conferences" class="track-section">
+        <div class="section-header">
+          <h2>Research and Conferences</h2>
+          <span class="section-tag">RSAP • DCSR Participatory Research Institute • REDCap Registry</span>
+        </div>
+
+        <div class="prose-measure">
+          <p>
+            Scholarly inquiry in the Miami Street Medicine Training Track is anchored in <strong>Community-Based Participatory Research (CBPR)</strong> and health equity quality improvement. Every track resident participates in the structured 8-session <strong>Resident Scholarly Activity Program (RSAP)</strong> co-led by <strong>Dr. Jonathan Tolentino</strong> and <strong>Dr. Victor Cueto</strong>, partnered with the <strong>Dade County Street Response Participatory Research Institute</strong> and the <strong>IDEA Lab</strong>.
+          </p>
+          <p>
+            Residents have mentored access to the IRB-approved <strong>Miami Street Medicine REDCap Clinical Informatics Registry</strong> (encompassing longitudinal demographic, social determinant, diagnostic, pharmacologic, and clinical outcome data across 437+ longitudinal cohort patients and 4,000+ street encounters). In keeping with our Anti-Exploitation Doctrine, all research questions are co-designed with community advisory input to ensure findings directly improve clinical delivery, resource allocation, and public policy for unhoused people in South Florida.
+          </p>
+        </div>
+
+        <h3>Selected Peer-Reviewed Publications by Miami Street Medicine &amp; IDEA Exchange Teams</h3>
+        <ul class="publication-list" role="list">
+          <li class="publication-item">
+            <div class="publication-title">
+              Knowledge, Attitudes, and Beliefs Regarding Medication-Assisted Treatment Among People Experiencing Unsheltered Homelessness in Miami, Florida
+            </div>
+            <p class="publication-meta">
+              <em>Journal of Substance Use and Addiction Treatment (JOSAT)</em> • Survey of N=163 unsheltered individuals demonstrating that 44.2% had never heard of MAT, establishing the empirical foundation for MSMTI's street-based buprenorphine initiation protocol.
+            </p>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">
+              Longitudinal Street-Based Hypertension Management Among Unsheltered Adults in Miami-Dade County
+            </div>
+            <p class="publication-meta">
+              <em>Miami Street Medicine Clinical Outcomes Study (Dr. Joshua Laban, Dr. Armen Henderson, Dr. Dan Bergholz et al.)</em> • Demonstrated a 72% baseline hypertension prevalence among unsheltered patients, achieving a statistically significant <strong>-9.25 mmHg mean systolic BP reduction (p &lt; 0.01)</strong> and <strong>45.3% full blood pressure control</strong> through consistent street outreach.
+            </p>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">
+              Demographic and Clinical Profile of Older Adults Experiencing Unsheltered Homelessness Served by a Street Medicine Program in Miami, Florida
+            </div>
+            <p class="publication-meta">
+              <em>Aging Medicine (2024)</em> • Characterized accelerated geriatric syndromes, cardiovascular disease burden, and neurocognitive vulnerability among older unsheltered adults in South Florida.
+            </p>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">
+              Tele-Harm Reduction for Rapid Initiation of Antiretrovirals and Medications for Opioid Use Disorder Among People Who Inject Drugs
+            </div>
+            <p class="publication-meta">
+              <em>Annals of Medicine / NIDA Avenir Research Program (Dr. Hansel Tookes, Dr. Edward Suarez Jr., Dr. Teresa Chueng et al.)</em> • Pioneered syringe-exchange-embedded telehealth and peer navigation to achieve rapid viral suppression and MOUD retention.
+            </p>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">
+              Dermatologic Conditions, Wound Care, and Healthcare Cost Avoidance in Street Medicine Outreach
+            </div>
+            <p class="publication-meta">
+              <em>JMIR Dermatology • American Journal of Managed Care (AJMC) • BMJ Case Reports • Cureus</em> • Multi-study portfolio documenting street dermatology prevalence, osteomyelitis/SSTI triage, and emergency department diversion.
+            </p>
+          </li>
+        </ul>
+
+        <h3>National Conferences &amp; Academic Dissemination Support</h3>
+        <div class="prose-measure">
+          <p>
+            Track residents are expected to submit at least one original research abstract, quality improvement project, or clinical vignette per training cycle. Supported by HRSA grant travel funds and institutional GME stipends, residents present their work at leading national and international venues:
+          </p>
+        </div>
+
+        <ul class="conference-grid" role="list">
+          <li class="conference-card">
+            <div>
+              <h4>International Street Medicine Symposium (ISMS)</h4>
+              <p>Hosted annually by the <a href="https://www.streetmedicine.org/" target="_blank" rel="noopener">Street Medicine Institute</a>, convening global street medicine clinicians, peer navigators, and medical educators.</p>
+            </div>
+            <span class="section-tag">Primary Track Conference</span>
+          </li>
+          <li class="conference-card">
+            <div>
+              <h4>National Health Care for the Homeless Council (NHCHC)</h4>
+              <p>Annual <a href="https://nhchc.org/" target="_blank" rel="noopener">NHCHC National Conference &amp; Policy Symposium</a> focused on FQHC/HCH clinical practice, medical respite, and housing justice.</p>
+            </div>
+            <span class="section-tag">Clinical &amp; Policy</span>
+          </li>
+          <li class="conference-card">
+            <div>
+              <h4>AMERSA Annual Conference</h4>
+              <p>Interdisciplinary <a href="https://amersa.org/" target="_blank" rel="noopener">Association for Multidisciplinary Education and Research in Substance use and Addiction</a> conference.</p>
+            </div>
+            <span class="section-tag">Addiction &amp; Harm Reduction</span>
+          </li>
+          <li class="conference-card">
+            <div>
+              <h4>SGIM &amp; AAMC Learn Serve Lead</h4>
+              <p>Regional and national <a href="https://www.sgim.org/" target="_blank" rel="noopener">Society of General Internal Medicine (SGIM)</a>, ACP, AAP/MPPDA, and <a href="https://www.aamc.org/" target="_blank" rel="noopener">AAMC</a> medical education meetings.</p>
+            </div>
+            <span class="section-tag">Primary Care &amp; GME</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ================================================================
+           SECTION 5: PEOPLE
+           ================================================================ -->
+      <section id="people" class="track-section">
+        <div class="section-header">
+          <h2>People</h2>
+          <span class="section-tag">Verified HRSA-25-078 Leadership, Faculty, Staff &amp; Cohorts</span>
+        </div>
+
+        <div class="prose-measure">
+          <p>
+            The Miami Street Medicine Training Initiative (MSMTI) is led by a collaborative, interprofessional team of physicians, psychologists, social workers, case managers, residency program coordinators, and salaried Peer Navigators across the University of Miami Miller School of Medicine, Jackson Health System, Dade County Street Response, Camillus Health Concern, and the IDEA Exchange. Select <strong>View Full Profile</strong> on any card to read full academic credentials and biographical details.
+          </p>
+        </div>
+
+        <!-- Yale-Style People Sub-Navigation + Native <search> Filter -->
+        <div class="people-toolbar">
+          <nav class="people-subnav" aria-label="People categories">
+            <ul>
+              <li><a href="#msmti-leadership">MSMTI Leadership</a></li>
+              <li><a href="#msmti-affiliated-faculty">MSMTI Affiliated Faculty</a></li>
+              <li><a href="#msmti-staff">MSMTI Staff &amp; Community Team</a></li>
+              <li><a href="#msmti-residents">MSMTI Residents</a></li>
+            </ul>
+          </nav>
+
+          <search aria-label="Filter people directory">
+            <form id="people-search-form" class="people-search-box">
+              <label for="people-search-input">Filter people:</label>
+              <input
+                type="search"
+                id="people-search-input"
+                class="people-search-input"
+                placeholder="Name, role, POCUS, MAT, Med-Peds..."
+              >
+            </form>
+          </search>
+        </div>
+
+        <!-- Polite Live Region for Search Filter Announcements -->
+        <div id="people-search-status" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+        <!-- Category 1: MSMTI Leadership -->
+        <div id="msmti-leadership" class="people-category-block">
+          <div class="people-category-header">
+            <h3>MSMTI Leadership</h3>
+            <span class="section-tag">Program &amp; Curriculum Direction</span>
+          </div>
+          <ul class="people-grid" role="list">
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">AH</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Project Director / PI (HRSA-25-078)</span>
+                  <h4 class="person-name">Armen Henderson, MD, MBA</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Assistant Professor of Clinical Medicine (Hospital Medicine) &amp; Director of Community Engagement, UM Miller School of Medicine; Founder &amp; CEO, Dade County Street Response (DCSR); Co-Founder, Miami Street Medicine
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="armen-henderson">
+                  View Full Profile <span class="visually-hidden">for Armen Henderson, MD, MBA</span>
+                </button>
+                <span class="person-org-pill">UM / JMH / DCSR</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">DB</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Founding Director, MSM &amp; Curriculum Co-Developer</span>
+                  <h4 class="person-name">Dan Bergholz, MD</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Founding Director, Miami Street Medicine; Co-Founder &amp; Board Secretary, DCSR; DCSR Clinical Educator &amp; Curriculum Co-Developer, MSMTI (Street Classroom); Addiction Medicine Fellow, Yale School of Medicine
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="dan-bergholz">
+                  View Full Profile <span class="visually-hidden">for Dan Bergholz, MD</span>
+                </button>
+                <span class="person-org-pill">MSM / DCSR / Yale</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">SB</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Co-Project Director &amp; IM Program Director</span>
+                  <h4 class="person-name">Stefanie R. Brown, MD, MBA, FAAP, FACP</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Associate Professor of Clinical Medicine and Pediatrics; Section Chief, Internal Medicine-Pediatrics; Program Director, Internal Medicine Residency Program; Founder, UM/JMH Urban Health Pathway
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="stefanie-brown">
+                  View Full Profile <span class="visually-hidden">for Stefanie R. Brown, MD, MBA</span>
+                </button>
+                <span class="person-org-pill">UM / Jackson GME</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">JT</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Med-Peds Program Director &amp; Evaluation Lead</span>
+                  <h4 class="person-name">Jonathan Lee Tolentino, MD, MS-HPE, FAAP, FACP</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Associate Professor of Clinical Medicine and Pediatrics; Program Director, Combined Internal Medicine-Pediatrics (Med-Peds) Residency Program; Evaluation &amp; RSAP Co-Lead, MSMTI
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="jonathan-tolentino">
+                  View Full Profile <span class="visually-hidden">for Jonathan Lee Tolentino, MD, MS-HPE</span>
+                </button>
+                <span class="person-org-pill">UM / Jackson GME</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">KV</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Director, Urban Health Track &amp; Med-Peds APD</span>
+                  <h4 class="person-name">Kendra M. Van Kirk, MD, MAT, FAAP</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Assistant Professor of Clinical Medicine and Pediatrics; Director, Urban Health Track &amp; Medical Educator Pathway; Associate Program Director, Combined Med-Peds Residency Program
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="kendra-van-kirk">
+                  View Full Profile <span class="visually-hidden">for Kendra M. Van Kirk, MD, MAT</span>
+                </button>
+                <span class="person-org-pill">UM / Jackson GME</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category 2: MSMTI Affiliated Faculty -->
+        <div id="msmti-affiliated-faculty" class="people-category-block">
+          <div class="people-category-header">
+            <h3>MSMTI Affiliated Faculty</h3>
+            <span class="section-tag">Clinical Preceptors &amp; Specialty Curriculum Leads</span>
+          </div>
+          <ul class="people-grid" role="list">
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">HT</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Harm Reduction &amp; Addiction Medicine Lead</span>
+                  <h4 class="person-name">Hansel E. Tookes, MD, MPH</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Tenured Professor of Clinical Medicine (Infectious Diseases); Founder &amp; Medical Director, IDEA Syringe Services Program &amp; IDEA Lab; Curriculum Lead for Harm Reduction &amp; SUD/MAT
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="hansel-tookes">
+                  View Full Profile <span class="visually-hidden">for Hansel E. Tookes, MD, MPH</span>
+                </button>
+                <span class="person-org-pill">UM ID / IDEA Exchange</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">ES</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Street Psychology &amp; Behavioral Health Lead</span>
+                  <h4 class="person-name">Edward Suarez Jr., PsyD, LMHC, MBA</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Research Assistant Professor of Psychiatry and Behavioral Sciences; Curriculum Lead for Street Psychology &amp; Behavioral Health, MSMTI; Faculty Advisor, Miami Street Medicine
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="edward-suarez">
+                  View Full Profile <span class="visually-hidden">for Edward Suarez Jr., PsyD, LMHC, MBA</span>
+                </button>
+                <span class="person-org-pill">UM Psychiatry / IDEA</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">VC</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Linguistic Concordance &amp; CBPR Lead</span>
+                  <h4 class="person-name">Victor Cueto, MD, MS, MPH</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Clinical Assistant Professor of Internal Medicine and Pediatrics; Curriculum Lead for Spanish/Haitian Creole Linguistic Concordance &amp; Community-Based Participatory Research (CBPR)
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="victor-cueto">
+                  View Full Profile <span class="visually-hidden">for Victor Cueto, MD, MS, MPH</span>
+                </button>
+                <span class="person-org-pill">UM Med-Peds</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">JL</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Attending Preceptor &amp; POCUS / Consult Lead</span>
+                  <h4 class="person-name">Joshua N. Laban, MD, MS, OLY</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Assistant Professor of Clinical Medicine (Hospital Medicine); Attending Street Preceptor, Handheld POCUS Lead &amp; JMH Inpatient Street Consult Co-Lead; Board Director, DCSR
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="joshua-laban">
+                  View Full Profile <span class="visually-hidden">for Joshua N. Laban, MD, MS, OLY</span>
+                </button>
+                <span class="person-org-pill">UM Hospital Med / DCSR</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">TC</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Infectious Diseases &amp; Addiction Preceptor</span>
+                  <h4 class="person-name">Teresa A. Chueng, MD, MPH</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Assistant Professor of Clinical Medicine (Division of Infectious Diseases); Attending Preceptor for Harm Reduction, Street Wound Care &amp; MOUD at IDEA Exchange
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="teresa-chueng">
+                  View Full Profile <span class="visually-hidden">for Teresa A. Chueng, MD, MPH</span>
+                </button>
+                <span class="person-org-pill">UM ID / IDEA Exchange</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">KC</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Addiction Medicine &amp; Reproductive Health</span>
+                  <h4 class="person-name">Katrina Jeanette Ciraldo, MD</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Assistant Professor of Clinical Family Medicine and Obstetrics &amp; Gynecology; Director, Addiction Medicine Elective; Attending Preceptor at IDEA Exchange &amp; JMH
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="katrina-ciraldo">
+                  View Full Profile <span class="visually-hidden">for Katrina Jeanette Ciraldo, MD</span>
+                </button>
+                <span class="person-org-pill">UM Fam Med &amp; OB/GYN</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">SM</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Director of Mental Health Services, DCSR</span>
+                  <h4 class="person-name">Stephen A. McLeod-Bryant, MD</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Director of Mental Health Services, Dade County Street Response (DCSR); Street Psychiatry Lead &amp; Attending Psychiatrist, Community Psychiatry Rounds &amp; Telepsychiatry
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="stephen-mcleod-bryant">
+                  View Full Profile <span class="visually-hidden">for Stephen A. McLeod-Bryant, MD</span>
+                </button>
+                <span class="person-org-pill">DCSR Psychiatry</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">IB</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Lead Street Clinician &amp; Field Preceptor</span>
+                  <h4 class="person-name">Inaki Bent, DO</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Per-Diem Lead Street Clinician &amp; Attending Preceptor, Miami Street Medicine and Dade County Street Response (DCSR)
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="inaki-bent">
+                  View Full Profile <span class="visually-hidden">for Inaki Bent, DO</span>
+                </button>
+                <span class="person-org-pill">MSM / DCSR</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category 3: MSMTI Staff & Community Operations -->
+        <div id="msmti-staff" class="people-category-block">
+          <div class="people-category-header">
+            <h3>MSMTI Staff &amp; Community Team</h3>
+            <span class="section-tag">Program Management, Case Management &amp; Lived-Experience Faculty</span>
+          </div>
+          <ul class="people-grid" role="list">
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">OO</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">MSMTI Program Manager</span>
+                  <h4 class="person-name">Oseiga Odafen, MD</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Program Manager, Miami Street Medicine Training Initiative (MSMTI); Coordinates multi-site rotation scheduling, REDCap evaluation tracking, and HRSA reporting
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="oseiga-odafen">
+                  View Full Profile <span class="visually-hidden">for Oseiga Odafen, MD</span>
+                </button>
+                <span class="person-org-pill">UM / DCSR Operations</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">FG</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Case Management Lead, DCSR &amp; MSM</span>
+                  <h4 class="person-name">Fallon L. Green</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Case Management Lead, Dade County Street Response (DCSR) &amp; Miami Street Medicine; Field Co-Instructor for J-11 Charity Card, FL DMV FLOW ID, and Housing Navigation
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="fallon-green">
+                  View Full Profile <span class="visually-hidden">for Fallon L. Green</span>
+                </button>
+                <span class="person-org-pill">DCSR Case Management</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">HA</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Clinic Manager &amp; Senior Case Coordinator</span>
+                  <h4 class="person-name">Hana Abdulla, MSW</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Clinic Manager &amp; Senior Social Work Case Coordinator, Miami Street Medicine / Dade County Street Response; Field Logistics &amp; Social Work Preceptor
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="hana-abdulla">
+                  View Full Profile <span class="visually-hidden">for Hana Abdulla, MSW</span>
+                </button>
+                <span class="person-org-pill">MSM / DCSR Social Work</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">PC</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">GME Residency Program Coordinators</span>
+                  <h4 class="person-name">Miriam Garcia, Branden Quetant, Yamica Dessalines &amp; Kai Decross-Gonzaleas</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Senior &amp; Residency Program Coordinators for Internal Medicine (Garcia, Quetant, Dessalines) and Combined Med-Peds (Decross-Gonzaleas), UM / Jackson Memorial Hospital
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="gme-program-coordinators">
+                  View Full Profile <span class="visually-hidden">for GME Residency Program Coordinators</span>
+                </button>
+                <span class="person-org-pill">UM / JMH GME Office</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">PN</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">Salaried Lived-Experience &amp; Linguistic Team</span>
+                  <h4 class="person-name">Lived-Experience Peer Navigators &amp; Language Observers</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                HRSA-Salaried Lived-Experience Peer Navigators (1.00 FTE) &amp; Spanish / Haitian Creole Language Concordance Observers (0.20 FTE) on all field rotations
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="peer-navigators-language-observers">
+                  View Full Profile <span class="visually-hidden">for Lived-Experience Peer Navigators and Language Observers</span>
+                </button>
+                <span class="person-org-pill">DCSR Community Faculty</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category 4: MSMTI Residents -->
+        <div id="msmti-residents" class="people-category-block">
+          <div class="people-category-header">
+            <h3>MSMTI Residents</h3>
+            <span class="section-tag">32–33 Track Residents Per Year + Elective Rotators</span>
+          </div>
+          <ul class="people-grid" role="list">
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">UH</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">3-Year Track Cohort (12 Residents Total)</span>
+                  <h4 class="person-name">Urban Health Track (UHT) Internal Medicine Residents</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                4 Categorical Internal Medicine Residents selected per class year (PGY-1 to PGY-3) completing longitudinal Street Classroom didactics and 4-week immersions in PGY-2 &amp; PGY-3
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="uht-im-residents">
+                  View Full Profile <span class="visually-hidden">for Urban Health Track Internal Medicine Residents</span>
+                </button>
+                <span class="person-org-pill">ACGME 1401121100</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">MP</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">4-Year Track Cohort (20–21 Residents Total)</span>
+                  <h4 class="person-name">Combined Internal Medicine-Pediatrics (Med-Peds) Residents</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                All 5 Categorical Med-Peds Residents per class year (PGY-1 to PGY-4) complete the longitudinal MSMTI curriculum and required 4-week community immersions in PGY-3 &amp; PGY-4
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="med-peds-residents">
+                  View Full Profile <span class="visually-hidden">for Combined Internal Medicine-Pediatrics Residents</span>
+                </button>
+                <span class="person-org-pill">ACGME 7001114086</span>
+              </div>
+            </li>
+
+            <li class="person-card">
+              <div class="person-header">
+                <div class="person-avatar" aria-hidden="true">ER</div>
+                <div class="person-name-group">
+                  <span class="person-role-badge">2- to 4-Week Block Elective Cohort</span>
+                  <h4 class="person-name">Jackson Health System IM &amp; Emergency Medicine Elective Rotators</h4>
+                </div>
+              </div>
+              <p class="person-titles">
+                Up to 3 categorical Internal Medicine, Emergency Medicine, Family Medicine, and Psychiatry residents per 4-week block rotating on the staggered field schedule
+              </p>
+              <div class="person-footer">
+                <button type="button" class="profile-btn" data-person-id="elective-rotators">
+                  View Full Profile <span class="visually-hidden">for Jackson Health System Elective Rotators</span>
+                </button>
+                <span class="person-org-pill">JMH Public Health Trust</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SECTION 6: HOW TO APPLY
+           ================================================================ -->
+      <section id="how-to-apply" class="track-section">
+        <div class="section-header">
+          <h2>How to Apply</h2>
+          <span class="section-tag">ERAS &amp; NRMP Match Guidance</span>
+        </div>
+
+        <!-- Yale-Modeled FAQ Cards -->
+        <div class="apply-faq-grid prose-measure">
+          <article class="faq-card">
+            <h3>How do I apply to this training track?</h3>
+            <p>
+              Prospective residency applicants apply through the Electronic Residency Application Service (<strong>ERAS</strong>) to either the <strong>University of Miami / Jackson Health System Internal Medicine Residency Program</strong> or the <strong>University of Miami / Jackson Health System Combined Internal Medicine-Pediatrics (Med-Peds) Residency Program</strong>.
+            </p>
+            <ul>
+              <li>
+                <strong>Combined Med-Peds Applicants:</strong> All categorical Med-Peds residents matching into the UM/Jackson Med-Peds program (5 residents per year) are automatically enrolled in the longitudinal 4-year Miami Street Medicine Training Initiative (MSMTI).
+              </li>
+              <li>
+                <strong>Categorical Internal Medicine Applicants (Urban Health Track):</strong> Applicants interested in the 3-year Street Medicine / Urban Health Track (4 residents per class year) should apply to the Categorical Internal Medicine program in ERAS and indicate their interest in the <strong>Urban Health Track / Miami Street Medicine Training Initiative</strong> during the interview season or upon matching during intern orientation.
+              </li>
+            </ul>
+          </article>
+
+          <article class="faq-card">
+            <h3>Is there a separate NRMP number in ERAS for the street medicine training track?</h3>
+            <p>
+              <strong>No.</strong> Just like the Yale Street Medicine Training Track, there is no separate NRMP match code exclusively for the street medicine track. Applicants rank the official Categorical Internal Medicine NRMP code (<code>1104140C0</code>) or Categorical Internal Medicine-Pediatrics NRMP code (<code>1104700C0</code>). Selection into the Internal Medicine Urban Health / Street Medicine cohort is finalized with matched residents prior to the start of intern year, while all matched Med-Peds residents participate longitudinally.
+            </p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Can categorical residents outside the track or visiting medical students rotate with Miami Street Medicine?</h3>
+            <p>
+              <strong>Yes.</strong> Categorical Internal Medicine, Emergency Medicine, Family Medicine, and Psychiatry residents at UM/Jackson Memorial Hospital may request the 2- to 4-week <strong>Street Medicine Elective Rotation</strong> through their Program Coordinator and MSMTI Program Manager Dr. Oseiga Odafen (capped at 3 resident rotators per 4-week block to preserve encampment safety and patient dignity). Fourth-year medical students may also enroll in the 4-week <em>Street Classroom Senior Elective</em> through the University of Miami Miller School of Medicine Office of Student Affairs.
+            </p>
+          </article>
+        </div>
+
+        <!-- Official Verified ACGME & NRMP Program Cards -->
+        <div class="match-tracks-grid">
+          <article class="match-card">
+            <h3>Internal Medicine Residency Program (Urban Health Track)</h3>
+            <div class="match-code-pills">
+              <span class="code-pill">ACGME ID: 1401121100</span>
+              <span class="code-pill">NRMP ID: 1104140C0</span>
+              <span class="code-pill">4 Track Residents / Class</span>
+            </div>
+            <p>
+              Sponsoring Institution: Jackson Memorial Hospital / Jackson Health System (Code <code>110314</code>). Features the 4+2 ambulatory block schedule with dedicated PGY-2 and PGY-3 4-week Street Medicine immersions.
+            </p>
+            <ul class="match-contacts">
+              <li><strong>Program Director:</strong> Stefanie R. Brown, MD, MBA (<a href="mailto:sbrown5@med.miami.edu">sbrown5@med.miami.edu</a>)</li>
+              <li><strong>Urban Health Track Director:</strong> Kendra M. Van Kirk, MD, MAT</li>
+              <li><strong>Senior Program Coordinator:</strong> Mrs. Miriam Garcia (<a href="mailto:mgarcia11@med.miami.edu">mgarcia11@med.miami.edu</a> • 305-585-5215 x1)</li>
+              <li><strong>Program Coordinators:</strong> Branden Quetant (<a href="mailto:bxq42@med.miami.edu">bxq42@med.miami.edu</a>) &amp; Ms. Yamica Dessalines (<a href="mailto:yxd265@med.miami.edu">yxd265@med.miami.edu</a>)</li>
+            </ul>
+          </article>
+
+          <article class="match-card">
+            <h3>Combined Internal Medicine-Pediatrics (Med-Peds) Residency Program</h3>
+            <div class="match-code-pills">
+              <span class="code-pill">ACGME ID: 7001114086</span>
+              <span class="code-pill">NRMP ID: 1104700C0</span>
+              <span class="code-pill">5 Track Residents / Class</span>
+            </div>
+            <p>
+              Sponsoring Institution: Jackson Memorial Hospital / Jackson Health System (Code <code>110314</code>). All 20–21 categorical Med-Peds residents complete the 4-year MSMTI curriculum with PGY-3 and PGY-4 4-week immersions.
+            </p>
+            <ul class="match-contacts">
+              <li><strong>Program Director:</strong> Jonathan Lee Tolentino, MD, MS-HPE (<a href="mailto:medpeds@med.miami.edu">medpeds@med.miami.edu</a>)</li>
+              <li><strong>Associate Program Director:</strong> Kendra M. Van Kirk, MD, MAT</li>
+              <li><strong>Senior Program Coordinator:</strong> Mr. Kai Decross-Gonzaleas (<a href="mailto:kdecross-gonzaleas@med.miami.edu">kdecross-gonzaleas@med.miami.edu</a> • 305-585-5954)</li>
+              <li><strong>MSMTI Program Office:</strong> Armen Henderson, MD, MBA &amp; Oseiga Odafen, MD (4300 NW 12th Ave, Miami, FL 33127)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ====================================================================
+       NATIVE MODAL DIALOG 1: Full Launch News Article ("Read more")
+       ==================================================================== -->
+  <dialog id="news-article-dialog" class="site-dialog" aria-labelledby="news-dialog-title">
+    <div class="dialog-header">
+      <h2 id="news-dialog-title">
+        University of Miami, Jackson Health System, and Miami Street Medicine Launch HRSA-Funded Street Medicine Residency Training Initiative
+      </h2>
+      <button type="button" id="close-news-dialog" class="dialog-close-btn">Close</button>
+    </div>
+    <div class="dialog-body prose-measure">
+      <div class="dialog-meta-tags">
+        <span class="code-pill">HRSA-25-078</span>
+        <span class="code-pill">Award 1 T35HP55565-01-00</span>
+        <span class="code-pill">$2,499,995 Five-Year Grant</span>
+        <span class="code-pill">Project Period: 2025–2030</span>
+      </div>
+      <p>
+        <strong>MIAMI, FL</strong> — Building on more than five years of street-based medical outreach, mobile crisis response, and harm reduction across Miami-Dade County, the <strong>University of Miami Miller School of Medicine</strong>, <strong>Jackson Health System / Jackson Memorial Hospital</strong>, and <strong>Dade County Street Response (DCSR) / Miami Street Medicine (MSM)</strong> have launched the <strong>Miami Street Medicine Training Initiative (MSMTI)</strong>, supported by a five-year, $2.5 million grant (<code>1 T35HP55565-01-00</code>) from the Health Resources and Services Administration (HRSA) Bureau of Health Workforce under the <em>Primary Care Training and Enhancement: Residency Training in Street Medicine (PCTE-RTSM, HRSA-25-078)</em> program.
+      </p>
+      <p>
+        Led by Principal Investigator and Project Director <strong>Armen Henderson, MD, MBA</strong> (Assistant Professor of Clinical Medicine and Founder/CEO of Dade County Street Response) and Co-Project Director <strong>Stefanie R. Brown, MD, MBA</strong> (Internal Medicine Residency Program Director and Section Chief of Med-Peds), in partnership with Med-Peds Program Director <strong>Jonathan Tolentino, MD, MS-HPE</strong>, Urban Health Track Director <strong>Kendra Van Kirk, MD, MAT</strong>, and Miami Street Medicine Founding Director and Curriculum Co-Developer <strong>Dan Bergholz, MD</strong>, the initiative embeds formal street medicine training across both the Internal Medicine (Urban Health Track) and Combined Internal Medicine-Pediatrics residency programs.
+      </p>
+      <h3>Addressing South Florida's Unsheltered Health Crisis</h3>
+      <p>
+        In Miami-Dade County, nearly 30% of households face severe housing instability, and unsheltered individuals confront extreme tropical heat, high rates of untreated hypertension (72% baseline prevalence in MSM's street cohort), and a 67% current / 86% lifetime prevalence of mental health and substance use disorders. Since 2020, Miami Street Medicine and Dade County Street Response have cared for more than 1,300 unique unsheltered patients across 4,000+ street encounters—demonstrating a statistically significant <strong>-9.25 mmHg reduction in systolic blood pressure (p &lt; 0.01)</strong> and <strong>45.3% full hypertension control</strong> delivered directly on the pavement.
+      </p>
+      <h3>A Seamless Hospital-to-Street Educational Ecosystem</h3>
+      <p>
+        Through two 4-week community clinical immersions, longitudinal continuity panels, and the 23-module <strong>"Street Classroom"</strong> curriculum, residents train across four integrated clinical environments:
+      </p>
+      <ul>
+        <li><strong>Dade County Street Response &amp; Miami Street Medicine:</strong> Weekly street rounds across Overtown, Downtown Miami, and countywide encampments, the Doctors Within Borders Free Urgent Care Clinic in Liberty City, and the 24/7 Freedom House Mobile Crisis Team.</li>
+        <li><strong>Camillus Health Concern (FQHC) &amp; Camillus House:</strong> Comprehensive Health Care for the Homeless primary care, Lazarus Project behavioral outreach, and post-hospitalization medical respite beds.</li>
+        <li><strong>IDEA Syringe Services Program (IDEA Exchange):</strong> Florida's first legal syringe exchange, founded by Dr. Hansel Tookes, training residents in low-barrier sublingual and long-acting injectable buprenorphine, xylazine/fentanyl wound care, and Tele-Harm Reduction HIV/HCV care.</li>
+        <li><strong>Jackson Memorial Hospital Inpatient Street Medicine Consult Service:</strong> "Street Medicine on the Floors" bedside consults preventing premature discharges and linking hospitalized unhoused patients to J-11 Jackson Card coverage and street follow-up.</li>
+      </ul>
+      <p>
+        Every field team pairs resident physicians with salaried <strong>Lived-Experience Peer Navigators</strong> and <strong>Spanish and Haitian Creole Language Concordance Observers</strong>, ensuring that the next generation of primary care physicians graduates equipped to practice radical hospitality and structural medicine wherever their patients live.
+      </p>
+    </div>
+  </dialog>
+
+  <!-- ====================================================================
+       NATIVE MODAL DIALOG 2: People Directory "View Full Profile"
+       ==================================================================== -->
+  <dialog id="profile-dialog" class="site-dialog" aria-labelledby="profile-dialog-title">
+    <div class="dialog-header">
+      <div>
+        <span id="profile-dialog-role" class="person-role-badge"></span>
+        <h2 id="profile-dialog-title">Faculty Profile</h2>
+      </div>
+      <button type="button" id="close-profile-dialog" class="dialog-close-btn">Close</button>
+    </div>
+    <div class="dialog-body prose-measure">
+      <p id="profile-dialog-titles" class="dialog-person-titles"></p>
+      <div id="profile-dialog-bio"></div>
+      <h3>Education &amp; Training</h3>
+      <ul id="profile-dialog-education"></ul>
+      <h3>MSMTI Clinical &amp; Educational Focus Areas</h3>
+      <ul id="profile-dialog-focus" class="match-code-pills dialog-focus-list" role="list"></ul>
+    </div>
+  </dialog>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h2>Miami Street Medicine Training Initiative (MSMTI)</h2>
+        <p>
+          A collaborative residency training program of the University of Miami Miller School of Medicine, Jackson Health System / Jackson Memorial Hospital, and Dade County Street Response, Inc. / Miami Street Medicine.
+        </p>
+        <p>
+          <strong>Community Headquarters:</strong><br>
+          Dade County Street Response &amp; Miami Street Medicine<br>
+          4300 NW 12th Ave, Miami, FL 33127
+        </p>
+      </div>
+      <div>
+        <h3>Participating Clinical &amp; Legal Partners</h3>
+        <ul>
+          <li><a href="https://www.miamistreetmedicine.org/" target="_blank" rel="noopener">Miami Street Medicine (MSM)</a></li>
+          <li><a href="https://www.dadecountystreetresponse.org/" target="_blank" rel="noopener">Dade County Street Response (DCSR)</a></li>
+          <li><a href="https://med.miami.edu/centers-and-institutes/idea-exchange" target="_blank" rel="noopener">IDEA Syringe Services Program (IDEA Exchange)</a></li>
+          <li><a href="https://www.camillushealth.org/" target="_blank" rel="noopener">Camillus Health Concern (FQHC) &amp; Camillus House</a></li>
+          <li><a href="https://www.legalservicesmiami.org/" target="_blank" rel="noopener">Legal Services of Greater Miami, Inc. (LSGMI)</a></li>
+          <li><a href="https://www.law.miami.edu/academics/clinics/health-rights-clinic" target="_blank" rel="noopener">UM School of Law Health Rights Clinic</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Federal Grant &amp; Accreditation Attribution</h3>
+        <p>
+          This program is supported by the Health Resources and Services Administration (HRSA) of the U.S. Department of Health and Human Services (HHS) under Grant Opportunity <code>HRSA-25-078</code>, Award Number <code>1 T35HP55565-01-00</code> (Primary Care Training and Enhancement: Residency Training in Street Medicine), totaling $2,499,995 over five years (2025–2030).
+        </p>
+        <p>
+          Field clinical care is additionally authorized under the Florida Department of Health Volunteer Health Care Provider Program (VHCPP Sovereign Immunity Contract <code>DH 1029</code>, F.S. § 766.1115).
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025–2026 University of Miami Miller School of Medicine, Jackson Health System &amp; Dade County Street Response, Inc. (FEIN 84-1958579).</span>
+      <span>Modeled on the HRSA PCTE-RTSM National Residency Training Track Architecture.</span>
+    </div>
+  </footer>
+</body>
+</html>
