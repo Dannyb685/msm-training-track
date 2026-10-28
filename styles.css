@@ -1,6 +1,6 @@
 /* ==========================================================================
    Miami Street Medicine Training Track (MSMTI)
-   Clean Academic Medical School Editorial Design (Modeled on Yale Medicine)
+   Clean Academic Medical School Editorial Design
    University of Miami Miller School of Medicine · Jackson Health System · MSM
    ========================================================================== */
 
@@ -31,7 +31,7 @@
   --brand-primary-light: #005030;      /* University of Miami Heritage Green */
   --brand-primary-dark: #4ade9b;
 
-  --brand-navy-light: #0f2537;         /* Yale / Academic Medical Navy */
+  --brand-navy-light: #0f2537;         /* Academic Medical Navy */
   --brand-navy-dark: #e2e8f0;
 
   --brand-accent-light: #b94612;       /* Refined Terracotta Accent (WCAG AA) */
@@ -389,7 +389,7 @@ button,
 }
 
 /* ==========================================================================
-   Editorial Page Header & Yale-Modeled Featured News Callout
+   Editorial Page Header & Featured News Callout
    ========================================================================== */
 
 .site-header {
@@ -477,7 +477,7 @@ button,
   object-fit: contain;
 }
 
-/* Yale-Style Featured Launch News Item */
+/* Featured Launch News Item */
 .featured-news-card {
   margin-block-start: 2rem;
   padding-block: 1.35rem;

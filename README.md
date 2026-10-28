@@ -1,6 +1,6 @@
 # Miami Street Medicine Training Track (MSMTI)
 
-Academic residency training track website modeled on the Yale Street Medicine Training Track architecture.
+Official academic residency training track website for the Miami Street Medicine Training Initiative (MSMTI).
 
 Supported by the Health Resources and Services Administration (HRSA) Bureau of Health Workforce under Grant `HRSA-25-078` (Award `1 T35HP55565-01-00`).
 

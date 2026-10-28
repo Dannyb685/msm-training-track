@@ -130,7 +130,7 @@ const PEOPLE_PROFILES = {
       "Tenured Professor of Clinical Medicine, Division of Infectious Diseases; Founder & Medical Director, IDEA Syringe Services Program & IDEA Lab; Curriculum Lead for Harm Reduction & Substance Use Disorders (MAT/OUD), MSMTI",
     organization: "UM Miller SOM / IDEA Exchange",
     education: [
-      "BS in Molecular, Cellular, and Developmental Biology — Yale University (2006)",
+      "BS in Molecular, Cellular, and Developmental Biology (2006)",
       "MPH — University of Miami Miller School of Medicine (2012)",
       "MD — University of Miami Miller School of Medicine (2014)",
       "Internal Medicine Residency — University of Miami / Jackson Memorial Hospital (2014–2017)"
