@@ -87,23 +87,43 @@
     </div>
   </header>
 
-  <!-- Main Two-Column Academic Layout -->
-  <div class="page-shell">
-    <!-- Sticky "On this page" Left Navigation -->
-    <aside class="on-this-page-aside" aria-label="Table of contents">
-      <h2 class="aside-heading">On this page</h2>
-      <nav aria-label="On this page sections">
-        <ul class="toc-list">
-          <li><a href="#overview" class="toc-link" aria-current="true">Overview</a></li>
-          <li><a href="#curriculum" class="toc-link">Curriculum</a></li>
-          <li><a href="#learning-objectives" class="toc-link">Learning Objectives</a></li>
-          <li><a href="#research-and-conferences" class="toc-link">Research and Conferences</a></li>
-          <li><a href="#people" class="toc-link">People</a></li>
-          <li><a href="#how-to-apply" class="toc-link">How to Apply</a></li>
-        </ul>
-      </nav>
-    </aside>
+  <!-- Sticky "On this page" Hamburger Navigation Bar -->
+  <div class="toc-sticky-bar">
+    <div class="toc-bar-inner">
+      <div class="toc-menu-wrapper">
+        <button
+          type="button"
+          id="toc-hamburger-btn"
+          class="toc-hamburger-btn"
+          aria-expanded="false"
+          aria-controls="toc-dropdown-menu"
+        >
+          <svg class="hamburger-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path class="line-top" d="M3 6h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path class="line-mid" d="M3 12h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path class="line-bot" d="M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="toc-btn-label">On this page</span>
+          <span class="toc-btn-sep" aria-hidden="true">·</span>
+          <span id="toc-current-section" class="toc-current-section">Overview</span>
+        </button>
 
+        <nav id="toc-dropdown-menu" class="toc-dropdown-menu" aria-label="On this page sections" hidden>
+          <ul class="toc-list">
+            <li><a href="#overview" class="toc-link" aria-current="true">Overview</a></li>
+            <li><a href="#curriculum" class="toc-link">Curriculum</a></li>
+            <li><a href="#learning-objectives" class="toc-link">Learning Objectives</a></li>
+            <li><a href="#research-and-conferences" class="toc-link">Research and Conferences</a></li>
+            <li><a href="#people" class="toc-link">People</a></li>
+            <li><a href="#how-to-apply" class="toc-link">How to Apply</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Editorial Layout -->
+  <div class="page-shell">
     <!-- Main Editorial Content Flow -->
     <main id="main-content" class="main-article" tabindex="-1">
 

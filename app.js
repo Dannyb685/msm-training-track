@@ -568,10 +568,53 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ------------------------------------------------------------------------
-     4. "On this page" Active Section Tracking via IntersectionObserver
+     4. "On this page" Hamburger Menu & Active Section Tracking
      ------------------------------------------------------------------------ */
+  const tocHamburgerBtn = document.getElementById("toc-hamburger-btn");
+  const tocDropdownMenu = document.getElementById("toc-dropdown-menu");
+  const tocCurrentLabel = document.getElementById("toc-current-section");
   const tocLinks = document.querySelectorAll(".toc-link");
   const sections = document.querySelectorAll(".track-section[id]");
+
+  const closeTocMenu = () => {
+    if (!tocHamburgerBtn || !tocDropdownMenu) return;
+    tocHamburgerBtn.setAttribute("aria-expanded", "false");
+    tocDropdownMenu.hidden = true;
+  };
+
+  if (tocHamburgerBtn && tocDropdownMenu) {
+    tocHamburgerBtn.addEventListener("click", () => {
+      const isExpanded = tocHamburgerBtn.getAttribute("aria-expanded") === "true";
+      tocHamburgerBtn.setAttribute("aria-expanded", String(!isExpanded));
+      tocDropdownMenu.hidden = isExpanded;
+    });
+
+    tocLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        if (tocCurrentLabel) {
+          tocCurrentLabel.textContent = link.textContent.trim();
+        }
+        closeTocMenu();
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        !tocDropdownMenu.hidden &&
+        !tocDropdownMenu.contains(event.target) &&
+        !tocHamburgerBtn.contains(event.target)
+      ) {
+        closeTocMenu();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !tocDropdownMenu.hidden) {
+        closeTocMenu();
+        tocHamburgerBtn.focus();
+      }
+    });
+  }
 
   if ("IntersectionObserver" in window && sections.length > 0) {
     const observer = new IntersectionObserver(
@@ -583,6 +626,9 @@ document.addEventListener("DOMContentLoaded", () => {
               const isMatch = link.getAttribute("href") === `#${activeId}`;
               if (isMatch) {
                 link.setAttribute("aria-current", "true");
+                if (tocCurrentLabel) {
+                  tocCurrentLabel.textContent = link.textContent.trim();
+                }
               } else {
                 link.removeAttribute("aria-current");
               }

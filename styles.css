@@ -162,7 +162,7 @@ html[data-theme="dark"] {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-block-start: 2.5rem;
+  scroll-padding-block-start: 4.25rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -548,79 +548,144 @@ button,
 }
 
 /* ==========================================================================
-   Main Two-Column Academic Layout ("On this page" Left Rail + Editorial Body)
+   Sticky "On this page" Hamburger Navigation Bar & Main Editorial Container
    ========================================================================== */
 
-.page-shell {
+.toc-sticky-bar {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 40;
+  background-color: var(--bg-canvas);
+  border-block-end: 1px solid var(--border-hairline);
+  box-shadow: var(--shadow-subtle);
+}
+
+.toc-bar-inner {
   max-inline-size: var(--max-container);
   margin-inline: auto;
-  padding-block: 3rem 5rem;
+  padding-block: 0.65rem;
   padding-inline: clamp(1.25rem, 4vw, 2.5rem);
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
+  display: flex;
+  align-items: safe center;
 }
 
-@media (min-width: 60em) {
-  .page-shell {
-    grid-template-columns: 13.5rem minmax(0, 1fr);
-    gap: 4rem;
-    align-items: start;
-  }
+.toc-menu-wrapper {
+  position: relative;
 }
 
-.on-this-page-aside {
-  padding-block: 0.25rem;
-}
-
-@media (min-width: 60em) {
-  .on-this-page-aside {
-    position: sticky;
-    inset-block-start: 2rem;
-  }
-}
-
-.aside-heading {
+.toc-hamburger-btn {
+  appearance: none;
+  background-color: var(--bg-subtle);
+  color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding-block: 0.45rem;
+  padding-inline: 0.85rem;
   font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: safe center;
+  gap: 0.55rem;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.toc-hamburger-btn:hover,
+.toc-hamburger-btn[aria-expanded="true"] {
+  background-color: var(--bg-callout);
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+}
+
+.hamburger-icon {
+  inline-size: 1.15rem;
+  block-size: 1.15rem;
+  flex-shrink: 0;
+}
+
+.hamburger-icon path {
+  transform-origin: center;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.toc-hamburger-btn[aria-expanded="true"] .hamburger-icon .line-top {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.toc-hamburger-btn[aria-expanded="true"] .hamburger-icon .line-mid {
+  opacity: 0;
+}
+
+.toc-hamburger-btn[aria-expanded="true"] .hamburger-icon .line-bot {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.toc-btn-sep {
   color: var(--text-muted);
-  margin-block-end: 0.75rem;
+  opacity: 0.6;
+}
+
+.toc-current-section {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.toc-dropdown-menu {
+  position: absolute;
+  inset-block-start: calc(100% + 0.45rem);
+  inset-inline-start: 0;
+  min-inline-size: 17.5rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding-block: 0.5rem;
+  box-shadow: var(--shadow-dialog);
+  z-index: 50;
+}
+
+.toc-dropdown-menu[hidden] {
+  display: none;
 }
 
 .toc-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  border-inline-start: 1px solid var(--border-hairline);
   display: flex;
   flex-direction: column;
 }
 
 .toc-link {
   display: block;
-  padding-block: 0.45rem;
+  padding-block: 0.55rem;
   padding-inline: 1rem;
-  margin-inline-start: -1px;
-  border-inline-start: 2px solid transparent;
-  color: var(--text-muted);
+  border-inline-start: 3px solid transparent;
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.35;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
 .toc-link:hover {
+  background-color: var(--bg-subtle);
   color: var(--text-primary);
 }
 
 .toc-link[aria-current="true"] {
+  background-color: var(--bg-callout);
   color: var(--brand-primary);
   border-inline-start-color: var(--brand-primary);
   font-weight: 600;
+}
+
+.page-shell {
+  max-inline-size: var(--max-container);
+  margin-inline: auto;
+  padding-block: 3rem 5rem;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
 }
 
 /* ==========================================================================
