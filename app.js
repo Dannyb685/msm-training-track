@@ -347,26 +347,6 @@ const PEOPLE_PROFILES = {
       "Post-Hospitalization Street Case Management"
     ]
   },
-  "hana-abdulla": {
-    name: "Hana Abdulla, MSW",
-    roleBadge: "Clinic Manager & Senior Case Coordinator, Miami Street Medicine",
-    titles:
-      "Clinic Manager & Senior Social Work Case Coordinator, Miami Street Medicine / Dade County Street Response (DCSR)",
-    organization: "Miami Street Medicine / DCSR",
-    education: [
-      "MSW — Master of Social Work"
-    ],
-    bio: [
-      "Hana Abdulla, MSW, serves as Clinic Manager and Senior Case Coordinator for Miami Street Medicine and Dade County Street Response. She oversees field clinic logistics, bi-weekly medication bagging sessions, modular medical backpack inventory, and interprofessional social work coordination.",
-      "During resident clinical immersions, she partners with resident physicians to bridge clinical treatment plans with trauma-informed social work interventions, shelter referrals, and specialty clinic warm handoffs."
-    ],
-    focusAreas: [
-      "Street Medicine Clinic Operations & Supply Logistics",
-      "Trauma-Informed Social Work & Case Coordination",
-      "Modular Field Formulary & Backpack Readiness",
-      "Interprofessional Team Huddles & Triage"
-    ]
-  },
   "gme-program-coordinators": {
     name: "Miriam Garcia, Branden Quetant, Yamica Dessalines & Kai Decross-Gonzaleas",
     roleBadge: "Residency Program Coordinators (Internal Medicine & Med-Peds)",
@@ -385,26 +365,6 @@ const PEOPLE_PROFILES = {
       "ACGME Block Scheduling & New Innovations",
       "GME Accreditation & Compliance",
       "Resident Onboarding & Track Logistics"
-    ]
-  },
-  "peer-navigators-language-observers": {
-    name: "Lived-Experience Peer Navigators & Community Language Observers",
-    roleBadge: "Salaried Community Faculty & Linguistic Concordance Team",
-    titles:
-      "HRSA-Salaried Lived-Experience Peer Navigators (1.00 FTE) & Spanish / Haitian Creole Language Concordance Observers (0.20 FTE), Dade County Street Response & MSMTI",
-    organization: "Dade County Street Response (DCSR)",
-    education: [
-      "Certified Peer Support & Lived Experience of Unsheltered Homelessness; Bilingual/Trilingual Medical Interpretation & Cultural Brokerage"
-    ],
-    bio: [
-      "In accordance with the Street Medicine Institute's philosophy and Miami Street Medicine's Anti-Exploitation Doctrine, individuals with lived experience of unsheltered homelessness serve as salaried Peer Navigators (1.00 FTE under HRSA-25-078) and core co-educators on every street run. Each resident is paired in a longitudinal Physician–Peer Navigator dyad to build trust, navigate encampment ecology, and ensure patient autonomy always supersedes educational objectives.",
-      "Additionally, dedicated Spanish and Haitian Creole Language Concordance Observers accompany residents during field rotations to evaluate interpreter utilization, culturally nuanced health communication, and structural humility using validated observation rubrics."
-    ],
-    focusAreas: [
-      "Physician–Peer Navigator Dyad Mentorship",
-      "Encampment Ecology & Radical Hospitality",
-      "Spanish & Haitian Creole Linguistic Concordance",
-      "Anti-Exploitation Doctrine & Patient Autonomy"
     ]
   },
   "uht-im-residents": {
@@ -640,11 +600,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ------------------------------------------------------------------------
-     5. Theme Toggle Button (System Auto -> Light -> Dark)
+     5. Theme Toggle Button (Light Default -> Dark -> System Auto)
      ------------------------------------------------------------------------ */
   const themeBtn = document.getElementById("theme-toggle-btn");
   const themeLabel = document.getElementById("theme-toggle-label");
-  const themeModes = ["auto", "light", "dark"];
+  const themeModes = ["light", "dark", "auto"];
   let currentModeIndex = 0;
 
   if (themeBtn && themeLabel) {
