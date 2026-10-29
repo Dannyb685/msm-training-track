@@ -6,10 +6,10 @@
 const PEOPLE_PROFILES = {
   "armen-henderson": {
     name: "Armen Henderson, MD, MBA",
-    roleBadge: "Project Director & Principal Investigator (HRSA-25-078)",
+    roleBadge: "Project Director & Principal Investigator",
     titles:
-      "Assistant Professor of Clinical Medicine, Division of Hospital Medicine & Director of Community Engagement, University of Miami Miller School of Medicine; Founder & Chief Executive Officer, Dade County Street Response (DCSR); Co-Founder, Miami Street Medicine",
-    organization: "UM Miller SOM / JMH / DCSR",
+      "President & Founder, Dade County Street Response (DCSR); Project Director & Principal Investigator, Miami Street Medicine Training Initiative (HRSA-25-078); Assistant Professor of Clinical Medicine, Division of Hospital Medicine & Director of Community Engagement, University of Miami Miller School of Medicine",
+    organization: "DCSR / UM Miller SOM / JMH",
     education: [
       "BS in Biology — Mansfield University of Pennsylvania (2008)",
       "MD — Meharry Medical College, Nashville, TN (2014)",
@@ -17,7 +17,7 @@ const PEOPLE_PROFILES = {
       "Internal Medicine Residency — University of Miami / Jackson Memorial Hospital (2017)"
     ],
     bio: [
-      "Dr. Armen Henderson serves as Project Director and Principal Investigator of the HRSA-funded Miami Street Medicine Training Initiative (MSMTI, Award 1 T35HP55565-01-00). An internal medicine hospitalist at Jackson Memorial Hospital and University of Miami Hospital, he founded Dade County Street Response (DCSR) in 2019 and co-founded Miami Street Medicine (MSM) in 2020 alongside medical students to build a continuous street-to-hospital health equity infrastructure across Miami-Dade County.",
+      "Dr. Armen Henderson is President & Founder of Dade County Street Response (DCSR) and serves as Project Director and Principal Investigator of the HRSA-funded Miami Street Medicine Training Initiative (MSMTI, Award 1 T35HP55565-01-00). An internal medicine hospitalist at Jackson Memorial Hospital and University of Miami Hospital, he founded Dade County Street Response in 2019 to build a continuous street-to-hospital health equity infrastructure across Miami-Dade County.",
       "Under his leadership, DCSR has expanded to encompass Miami Street Medicine, the Doctors Within Borders (DWB) Free Urgent Care Clinic in Liberty City, the 24/7 Freedom House Mobile Crisis Team, and a rapid-deployment Disaster Relief Team that responded within 72 hours of Hurricane Ian (2022) and Hurricane Idalia (2023). He has precepted more than 40 resident rotators and hundreds of medical and nursing students directly on the street.",
       "Nationally, Dr. Henderson serves as a Lead Member of the National Academy of Medicine (NAM) Climate Communities Network, an Echoing Green Fellow, and recipient of the 2024 Congressional Black Caucus Healthcare Hero Award. Within MSMTI, he oversees institutional partnerships across UM, Jackson Health System, DCSR, Camillus Health Concern, and the IDEA Exchange, leads inpatient-to-street transitions ('Street Medicine on the Floors'), and mentors residents in structural advocacy and extreme-heat vulnerability research."
     ],
@@ -30,9 +30,9 @@ const PEOPLE_PROFILES = {
   },
   "dan-bergholz": {
     name: "Dan Bergholz, MD",
-    roleBadge: "Founding Director, Miami Street Medicine & Curriculum Co-Developer",
+    roleBadge: "DCSR Clinical Educator - Miami Street Medicine Training Initiative",
     titles:
-      "Founding Director, Miami Street Medicine; Co-Founder & Board Secretary, Dade County Street Response (DCSR); DCSR Clinical Educator & Curriculum Co-Developer, MSMTI (Street Classroom); Clinical Fellow in Addiction Medicine, Yale School of Medicine / Yale New Haven Hospital",
+      "Founder, Miami Street Medicine; DCSR Clinical Educator, Miami Street Medicine Training Initiative; Clinical Fellow in Addiction Medicine, Yale School of Medicine / Yale New Haven Hospital",
     organization: "Miami Street Medicine / DCSR / Yale",
     education: [
       "MD — University of Miami Miller School of Medicine",
@@ -40,9 +40,9 @@ const PEOPLE_PROFILES = {
       "Clinical Fellowship in Addiction Medicine — Yale School of Medicine / Yale New Haven Hospital"
     ],
     bio: [
-      "Dr. Dan Bergholz is the Founding Director of Miami Street Medicine (MSM), Co-Founder and Board Secretary of Dade County Street Response (DCSR), and DCSR Clinical Educator and Curriculum Co-Developer for the HRSA Miami Street Medicine Training Initiative (MSMTI). While a medical student at the University of Miami Miller School of Medicine in 2020, he co-founded Miami Street Medicine with Dr. Armen Henderson and fellow students, establishing its street rounds workflows, REDCap clinical registry, and Florida Department of Health Volunteer Health Care Provider Program (VHCPP) sovereign immunity structure.",
-      "In collaborative partnership with Dr. Armen Henderson, Dr. Stefanie Brown, Dr. Jonathan Tolentino, and the UM/JMH faculty team, Dr. Bergholz co-developed the 'Street Classroom' curriculum—comprising the 7-module Core Didactic Trunk (T1–T7), 16 specialty Branch Modules (B01–B16), a 51-case clinical vignette bank, 7 waterproof field pocket cards, the HOUSED BEDS street history mnemonic, the 6-Level Street Triage & REDCap Flagging System, and a 2-station OSCE checkout.",
-      "Now completing fellowship training in Addiction Medicine at Yale School of Medicine / Yale New Haven Hospital after Internal Medicine residency at UCLA, Dr. Bergholz co-leads the synchronous Wednesday evening Street Classroom Zoom sessions, low-barrier buprenorphine and harm reduction curricula, and multi-institutional street medicine education exchange."
+      "Dr. Dan Bergholz is the Founder of Miami Street Medicine (MSM) and serves as DCSR Clinical Educator for the HRSA-funded Miami Street Medicine Training Initiative (MSMTI). While a medical student at the University of Miami Miller School of Medicine in 2020, he founded Miami Street Medicine alongside fellow students and Dr. Armen Henderson's Dade County Street Response, establishing its street rounds workflows, REDCap clinical registry, and Florida Department of Health Volunteer Health Care Provider Program (VHCPP) sovereign immunity structure.",
+      "As DCSR Clinical Educator for the Miami Street Medicine Training Initiative, Dr. Bergholz developed the 'Street Classroom' curriculum in collaboration with the UM/JMH faculty team—comprising the 7-module Core Didactic Trunk (T1–T7), 16 specialty Branch Modules (B01–B16), a 51-case clinical vignette bank, 7 waterproof field pocket cards, the HOUSED BEDS street history mnemonic, the 6-Level Street Triage & REDCap Flagging System, and a 2-station OSCE checkout.",
+      "Now completing fellowship training in Addiction Medicine at Yale School of Medicine / Yale New Haven Hospital after Internal Medicine residency at UCLA, Dr. Bergholz leads the synchronous Street Classroom Zoom sessions, low-barrier buprenorphine and harm reduction curricula, and multi-institutional street medicine education."
     ],
     focusAreas: [
       "Street Medicine Curriculum Architecture (Street Classroom)",
